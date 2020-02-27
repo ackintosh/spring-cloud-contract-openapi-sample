@@ -48,6 +48,14 @@ dependencies {
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
+
+    // * Spring Cloud Contract Verifier
+    testImplementation("org.springframework.cloud:spring-cloud-contract-verifier:2.1.5.RELEASE")
+    // * REST Assured
+    testImplementation("io.rest-assured:rest-assured-common:4.2.0")
+    testImplementation("io.rest-assured:spring-mock-mvc:4.2.0")
+    // * JUnit
+    testImplementation("org.junit.jupiter:junit-jupiter:5.5.2")
 }
 
 tasks.withType<Test> {
